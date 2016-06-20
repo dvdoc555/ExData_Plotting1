@@ -23,5 +23,7 @@ hhdata$dt<-hhdata$Date+hhdata$Time
 
 plot(hhdata$dt,hhdata$Global_active_power,ylab="Global Active Power(kilowatts)",type="l")
 
+par(bg="white")
+
 dev.copy(png,file="plot2.png")
 dev.off()

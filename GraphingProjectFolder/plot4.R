@@ -36,5 +36,7 @@ legend("topright",lty=1,legend = c("Sub_metering_1","Sub_metering_2","Sub_meteri
 
 plot(hhdata$dt,hhdata$Global_reactive_power,ylab="Global_reactive_power",type="l")
 
+par(bg="white")
+
 dev.copy(png,file="plot4.png")
 dev.off()

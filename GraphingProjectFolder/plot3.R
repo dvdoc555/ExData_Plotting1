@@ -28,5 +28,7 @@ points(hhdata$dt,hhdata$Sub_metering_3,col="blue",type="l")
 legend("topright",lty=1,legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        col=c("black","red","blue"))
 
+par(bg="white")
+
 dev.copy(png,file="plot3.png")
 dev.off()
